@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: "HankenGrotesk", sans-serif;
+    background-color: white;
+    font: 16px;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* .card BEGINS BELOW */
+
+body {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(212, 45%, 89%);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    max-width: 300px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.card img {
+    width: 90%;
+    border-radius: 15px;
+    margin-top: 17px;
+}
+
+.card h6 {
+    padding: 20px 0px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.card p {
+    color: hsl(220, 15%, 55%);
+    padding: 0px 20px 40px 20px;
+    text-align: center;
+}
+
+@media (min-width: 600px) {
+    .card {
+        max-width: 375px;
+    }
+
+    .card h6 {
+        font-size: 25px;
+    }
+
+    .card p {
+        font-size: 17px;
+    }
+}
